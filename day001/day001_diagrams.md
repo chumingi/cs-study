@@ -24,3 +24,9 @@
 - Data
 - Heap
 - Stack
+
+mermaid 렌더링 테스트
+```mermaid
+flowchart TD
+  A[A] ==> B(B)
+```
