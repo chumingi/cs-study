@@ -2,16 +2,10 @@
 
 ## 코드 실행 흐름
 
-```text
-[ Disk ]
-  |
-  |  load (프로그램 실행)
-  v
-[ RAM ]
-  |
-  |  execute (명령어 수행)
-  v
-[ CPU ]
+```mermaid
+flowchart TD
+  D[ Disk ] -- "load (프로그램 실행)" --> R[ RAM ]
+  R -- "execute (명령어 수행)" --> C[ CPU ]
 ```
 
 - Disk: 코드와 데이터가 영구 저장되는 공간
@@ -24,9 +18,3 @@
 - Data
 - Heap
 - Stack
-
-mermaid 렌더링 테스트
-```mermaid
-flowchart TD
-  A[A] ==> B(B)
-```
