@@ -14,7 +14,34 @@ flowchart TD
 - 속도: CPU > RAM >>> Disk
 
 ## 프로세스 메모리 구조
-- Code
-- Data
-- Heap
-- Stack
+
+```text
+[ Code ]
+  - 함수 코드
+  - 실행 명령어
+
+[ Data ]
+  - 전역 변수
+  - static 변수
+
+[ Heap ]
+  - 객체
+  - 배열
+  - 동적 할당
+
+[ Stack ]
+  - 함수 호출
+  - 지역 변수
+  - 매개변수
+```
+
+## 함수 호출과 스택 프레임
+
+```text
+| sum frame       |
+| a, b, result    |
+|-----------------|
+| main frame      |
+| x               |
+|-----------------|
+```
