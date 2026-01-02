@@ -58,3 +58,14 @@ flowchart TD
 
 - 가장 위: 현재 실행 중인 함수
 - 아래: 호출한 함수들
+
+## 컨텍스트 스위칭 개념
+
+```mermaid
+flowchart TD
+A[ Thread A ] -->| save context | C[ CPU ]
+B[ Thread B ] -->| load context | C
+```
+
+- 실행 중인 스레드의 상태를 저장
+- 다른 스레드의 상태를 복원
